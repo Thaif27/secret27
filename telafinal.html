@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="final.css">
+    <title>Namora comigo?</title>
+</head>
+<body>
+    <section class="ba">
+        <div class="bloco" > 
+        <h2> Aceita namorar comigo ? </h2>
+        <img src="./imagens/nos.png" alt="">
+        <h3> </h3>
+        <a href="https://music.youtube.com/watch?v=izGwDsrQ1eQ"><button id="sim" onclick="sim()"> SIM</button></a>
+        <button class="btn" id="nao" onclick="desvia(this)" onmouseover="desvia(this)">NÃO</button>
+
+    </div>
+    </section>
+    <script>
+        function sim(sim) {
+            alert("Você aceitou namorar comigo! Parabéns!! Deus nos abençoe, lindona :)");
+            // redireciona para um URL após clicar no SIM
+            location.href = "https://music.youtube.com/watch?v=izGwDsrQ1eQ";
+        }
+
+        function desvia(btn) {
+            btn.style.position = 'absolute';
+            btn.style.bottom = geraPosicao(20, 90);
+            btn.style.left = geraPosicao(10, 90);
+
+        }
+
+        function geraPosicao(min, max) {
+            return (Math.random() * (max - min) + min) + "%";
+        }
+    </script>
+</body>
+</html>

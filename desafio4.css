@@ -1,0 +1,107 @@
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+body::before {
+    background-image: url('./imagens/starfinal.png');
+}
+
+body::after {
+    background-image: url('./imagens/hp.png'); /* Adicione o caminho para a segunda imagem aqui */
+}
+
+body::before,
+body::after {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: #acc2ac;
+}
+
+.bloco {
+    margin: auto;
+    background-color: #ffffff;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 2;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+}
+
+#sim {
+    background: #800080;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    width: 80px;
+    border-radius: 5px;
+    margin-left: 500px;
+    position: absolute;
+    top: 87%;
+    left: 67px;
+}
+
+#nao {
+    position: absolute;
+    top: 87%;
+    left: 675px;
+    background: #4b0082;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 80px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.moving-gif {
+    animation: moveGif 10s linear infinite;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    left: auto;
+}
+
+@keyframes moveGif {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+}

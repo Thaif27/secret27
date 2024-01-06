@@ -1,0 +1,96 @@
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+body::before {
+    background-image: url('./imagens/starfinal.png');
+}
+
+body::after {
+    background-image: url('./imagens/fundo.png'); /* Adicione o caminho para a segunda imagem aqui */
+}
+
+body::before,
+body::after {
+    background-size: cover;   
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: #f37a7a;
+}
+
+.bloco {
+    margin: auto;
+    background-color: #ff0000;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 2;
+}
+
+h2{
+    color: aliceblue;
+}
+
+img {
+    width: 450px;
+    height: 450px;
+}
+
+#sim {
+    background: #ff0000;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    width: 80px;
+    border-radius: 5px;
+    margin-left: 500px;
+    position: absolute;
+    top: 87%;
+    left: 67px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+}
+
+#nao {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    background: black;
+    color: aliceblue;
+    border: none;
+    padding: 10px;
+    width: 80px;
+    border-radius: 5px;
+    margin-left: 10px;
+    position: absolute;
+    top: 87%;
+    left: 675px;
+    height: 6%;
+}
+
