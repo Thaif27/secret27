@@ -49,14 +49,14 @@ body::before {
             width: 300px;
             height: 300px;
         }
-        #sim{
+       #sim{
             background: black;
             color: white;
             border: none;
             padding: 10px;
             width: 80px;
             border-radius: 5px;
-            margin: 10px;
+            margin-left: 500px;
             position: absolute;
         top: 87%; /* Posição vertical 50% da tela */
         left: 67px; /* Distância da borda esquerda */
@@ -71,5 +71,5 @@ body::before {
             padding: 10px;
             width: 80px;
             border-radius: 5px;
-            margin: 10px;
+            margin-left: 10px;
         }
