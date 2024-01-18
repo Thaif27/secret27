@@ -56,7 +56,7 @@ body::before {
             padding: 10px;
             width: 80px;
             border-radius: 5px;
-            margin-left: 500px;
+            margin: 10px;
             position: absolute;
         top: 87%; /* Posição vertical 50% da tela */
         left: 67px; /* Distância da borda esquerda */
@@ -71,5 +71,5 @@ body::before {
             padding: 10px;
             width: 80px;
             border-radius: 5px;
-            margin-left: 10px;
+            margin: 10px;
         }
